@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="icon" href="/images/brand.jpg" > 
+</head>
+<body class="app">
+    <div class="weather-app">
+        <h2 class="brand">𝐕𝐜 𝐖𝐄𝐀𝐓𝐇𝐄𝐑</h2>
+        <div class="container">
+            <!-- here come h2 brand tag if any error comes -->
+            <div></div>  
+            <div>
+                <h1 class="temp">18&#176</h1>
+                <div class="city-time">
+                    <h1 class="cityName">london</h1>
+                    <small>
+                        <span class="time">06:08 AM</span>
+                        <span class="date">Mon sep 28 2025 </span>
+                    </small>
+                </div>
+                <div class="weather">
+                    <img src="/images/drizzle.png" class="icon" alt="icon" width="30" height="30">
+                    <span class="condition">Drizzle</span>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <!-- Input area start -->
+            <form id="locationInput" >
+                <input type="text" class="search" name='inputname' placeholder="Search Loaction.....">
+                <button type="button"   class="submitbtn">
+                    <i class="fa fa-search"></i>
+                </button>               
+            </form>
+            <!-- Input area End -->
+            <!-- panel input down area start -->
+            <ul class="place">
+                <span class="Cityname"></span>
+                <span class="country"></span>
+            </ul>
+            <ul class="details">
+                <li>
+                    <span>Weather</span>
+                    <span class="temperature"><u>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</u></span>
+                </li>
+                <li>
+                    <span>Cloudy</span>
+                    <span class="cloud"><u>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</u></span>
+                </li>
+                <li>
+                    <span>Humidity</span>
+                    <span class="Humidity"><u>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp%</u></span>
+                </li>
+                <li>
+                    <span>Wind</span>
+                    <span class="Wind"><u>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspKm/h</u></span>
+                </li>
+            </ul>
+            <button class="locationbtn">Get current location&nbsp; <i class="fa fa-map-marker"></i></button>
+            <!-- panel input down area End -->
+        </div>
+        <footer> 
+            <h3 class="credit"> 𝐕𝐜 </h3> 
+        </footer>      
+    </div>
+    <script src="test.js"></script>
+    
+</body>
+</html>
