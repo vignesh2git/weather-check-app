@@ -1,7 +1,139 @@
 /* Responsive design start */
 
+/* Base responsive styles - large screens below 1400px */
+@media (max-width: 1200px) {
+ .panel{
+        width: 65%;
+        position: absolute;  
+        left: 20%;
+        top: 15%;
+        height: 55%;
+        
+    }
+  input {
+    width: 65%;
+  }
+  .details li {
+    font-size: 16px;
+  }
+  html {
+    font-size: 10px;
+  }
+  .locationbtn {
+    left: 20%;
+  }
+  .time,
+  .date {
+    font-size: 12px;
+  }
+  .credit {
+    left: 40%;
+  }
+}
 
-@media (max-width:1400px){
+/* Medium screens: tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    padding: 1.5em;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+ .panel{
+        width: 55%;
+        position: absolute;  
+        left: 20%;
+        top: 15%;
+        height: 55%;
+        
+    }
+  .temp {
+    font-size: 9em;
+  }
+
+  .city-time h1 {
+    font-size: 2em;
+  }
+
+  .locationbtn {
+    left: 34%;
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+
+  .credit {
+    font-size: 14px;
+    left: 40%;
+  }
+}
+
+/* Small screens: phones (below 768px) */
+@media (max-width: 768px) {
+  .container {
+    padding: 1em;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .panel {
+    width: 90%;
+    left: 5%;
+    top: 20%;
+    height: auto;
+    padding: 1.5em 1em;
+  }
+
+  .temp {
+    font-size: 4em;
+  }
+
+  .city-time h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .time,
+  .date {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .locationbtn {
+    position: static;
+    margin-top: 1em;
+    margin-left: 7em;
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .credit {
+    left: 40%;
+    font-size: 8px;
+    text-align: center;
+  }
+
+  #locationInput input {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  #locationInput button {
+    width: 35px;
+    font-size: 16px;
+  }
+
+  .details li {
+    font-size: 14px;
+  }
+
+  .place span {
+    font-size: 14px;
+  }
+
+  
+}
+
+/* @media (max-width:1400px){
     .panel{
         width: 65%;
         position: absolute;  
@@ -29,284 +161,6 @@
     }
     .credit{
         
-        left: 40%;
-    }
-}
-
-
-
-
-/* @media screen and (max-width:600px){
-    .panel,.container{
-        position: relative;
-        width:50%;
-        top : initial;
-    }
-}
-
-@media screen and (max-width:500){
-    html{
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-height:300px){
-    .weather-app{
-        min-height: 40em;
-    }
-} */
-
-
-/* @media (max-width:1200px){
-    .panel{
-        width: 55%;
-        position: absolute;  
-        left: 30%;
-        top: 15%;  
-    }
-    input{
-        width: 65%;
-    }
-    .details li{
-        font-size: 16px;
-    }
-    html{
-        font-size: 10px;
-    }
-} */
-
-/* @media (max-height:800px){
-    .panel{
-        width: 65%;
-        position: absolute;  
-        left: 20%;
-        top: 15%;
-        
-    }
-    input{
-        width: 65%;
-    }
-    #locationInput{
-        height: 12%;
-    }
-    #locationInput ::placeholder{
-        font-size: 30px;
-        
-    }
-    .details li{
-        font-size: 20px;
-    }
-    html{
-        font-size: 10px;
-    }
-    .place{
-        font-size:20px;
-    }
-    .locationbtn{
-        font-size: 20px;
-        left: 30%;
-        top: 87%;
-    }
-    .brand{
-        font-size: 27px;
-    }
-    .brandimg{
-         width: 30px;
-    }
-    .credit{
-        left: 45%;
-    }
-} */
-/* @media (max-width:500px){
-    .panel{
-        width: 65%;
-        position: absolute;  
-        left: 20%;
-        top: 19%; 
-        height: 62.5%; 
-    }
-    #locationInput ::placeholder{
-        font-size: 12px;
-    }
-
-    .details li{
-        font-size: 13px;
-    }
-    .place{
-        font-size: 13px;
-    }
-    html{
-        font-size: 5px;
-    }
-    .locationbtn{
-        font-size: 8px;
-        left: 27%;
-    }
-    .brand{
-        font-size: 15px;
-    }
-    .brandimg{
-         width: 18px;
-    }
-    
-    .credit{
-        left: 40%;
-    }
-} */
-/* @media (max-height:500px){
-    .panel{
-        width: 65%;
-        position: absolute;  
-        left: 20%;
-        top: 19%; 
-        height: 62.5%; 
-    }
-    #locationInput ::placeholder{
-        font-size: 12px;
-    }
-
-    .details li{
-        font-size: 13px;
-    }
-    .place{
-        font-size: 13px;
-    }
-    html{
-        font-size: 5px;
-    }
-    .locationbtn{
-        font-size: 8px;
-        left: 35%;
-    }
-    .brand{
-        font-size: 15px;
-    }
-    .brandimg{
-         width: 18px;
-    }
-    
-    .credit{
-        left: 45%;
-    }
-}
-
-@media screen and (max-height:300px){
-    .panel{
-        width: 65%;
-        position: absolute;  
-        left: 23%;
-        top: 15%;  
-    }
-    #locationInput ::placeholder{
-        font-size: 10px;
-    }
-    #locationInput{
-       height: 15%;
-        
-    }
-    .city-time{
-        font-size: 5px; 
-    }
-    .time{
-        font-size: 9px; 
-    }
-    .date{
-        font-size: 6px; 
-    }
-    .icon{
-        font-size: 2px;
-        width: 8%;
-        height: 8%;
-    }
-    .condition{
-        font-size: 6px; 
-    }
-    .temp{
-        font-size: 18px;
-    }
-    .details li{
-        font-size: 7px;
-       
-    }
-    .place{
-        font-size: 7px;
-    }
-    html{
-        font-size: 5px;
-    }
-    .locationbtn{
-        font-size: 4px;
-        left: 35%;
-    }
-    .brand{
-        font-size: 15px;
-    }
-    .brandimg{
-         width: 18px;
-    
-    }
-    .credit{
-        left: 40%;
-    }
-}
-
-@media screen and (max-width:300px){
-    .panel{
-        width: 65%;
-        position: absolute;  
-        left: 23%;
-        top: 15%;  
-        height: 65%;
-    }
-    #locationInput ::placeholder{
-        font-size: 10px;
-    }
-    #locationInput{
-       height: 15%;
-        
-    }
-    .city-time{
-        font-size: 5px; 
-    }
-    .time{
-        font-size: 9px; 
-    }
-    .date{
-        font-size: 6px; 
-    }
-    .icon{
-        font-size: 2px;
-        width: 8%;
-        height: 8%;
-    }
-    .condition{
-        font-size: 6px; 
-    }
-    .temp{
-        font-size: 18px;
-    }
-    .details li{
-        font-size: 7px;
-       
-    }
-    .place{
-        font-size: 7px;
-    }
-    html{
-        font-size: 5px;
-    }
-    .locationbtn{
-        font-size: 4px;
-        left: 35%;
-    }
-    .brand{
-        font-size: 15px;
-    }
-    .brandimg{
-         width: 18px;
-    
-    }
-    .credit{
         left: 40%;
     }
 } */

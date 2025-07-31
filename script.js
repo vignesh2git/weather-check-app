@@ -149,3 +149,15 @@ searchbtn.addEventListener("click", () => {
   checkweather(searchbox.value);
   return (searchbox.value = "");
 });
+
+// Also handle form submit (Enter key)
+getvalue.addEventListener("submit", function (e) {
+  e.preventDefault();
+  const input = searchbox.value.trim();
+  if (input !== "") {
+    checkweather(input);
+    searchbox.value = "";
+  } else {
+    alert("Please enter a city name.");
+  }
+});
