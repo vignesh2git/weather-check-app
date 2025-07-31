@@ -27,8 +27,10 @@ A responsive weather application that allows users to check the current weather 
 
 📸 𝐃𝐞𝐦𝐨 𝐒𝐜𝐫𝐞𝐞𝐧𝐬𝐡𝐨𝐭
 ---
+Laptop View
 ![Weather App Screenshot](/images/weather-demo.png)
-
+Moblie View
+![Weather App Screenshot](/images/weather-moblie-demo.png)
 🔧 𝐇𝐨𝐰 𝐭𝐨 𝐑𝐮𝐧 𝐋𝐨𝐜𝐚𝐥𝐥𝐲
 ---
 
