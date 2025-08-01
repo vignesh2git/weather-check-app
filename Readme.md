@@ -48,7 +48,7 @@ Moblie View
 
 • Clone the repository
 
-   git clone https://github.com/vignesh2git/weather-check-app.git
+    git clone https://github.com/vignesh2git/weather-check-app.git
 
 • Open index.html in your browser
 
